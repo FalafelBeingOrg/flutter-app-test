@@ -121,14 +121,17 @@ class _MyHomePageState extends State<MyHomePage> {
             const Text(
               'Counter:',
             ),
+            Padding(padding: EdgeInsets.all(10)),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
+            Padding(padding: EdgeInsets.all(10)),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 ElevatedButton(onPressed: _incrementCounter, child: Text("+")),
+                Padding(padding: EdgeInsets.all(10)),
                 ElevatedButton(onPressed: _decrementCounter, child: Text("-")),
               ],
             )
